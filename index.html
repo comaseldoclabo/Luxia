@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXIA Studio - Studio IA Ultra-Réaliste, Photoshop & VEO 3</title>
+    <meta name="description" content="Studio en ligne proposant trois services IA : Photographie ultra-réaliste, Générateur d'images type Photoshop et Générateur vidéo VEO 3 IA. Interface premium, fluide et intuitive, expérience utilisateur adaptée à tous les niveaux." />
+    <meta property="og:title" content="LUXIA Studio - Studio IA Ultra-Réaliste, Photoshop & VEO 3" />
+    <meta property="og:description" content="Studio en ligne proposant trois services IA : Photographie ultra-réaliste, Générateur d'images type Photoshop et Générateur vidéo VEO 3 IA. Interface premium, fluide et intuitive, expérience utilisateur adaptée à tous les niveaux." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                50: '#FFFDF0',
+                100: '#FFF9C2',
+                200: '#FFF285',
+                300: '#FFE747',
+                400: '#FFD700',
+                500: '#E5C000',
+                600: '#BA9B00',
+                700: '#8E7500',
+                800: '#645100',
+                900: '#3D3100',
+              },
+              luxury: {
+                dark: '#070709',
+                card: '#0D0E14',
+                surface: '#12141C',
+                border: '#222533',
+                highlight: '#2A2D3E',
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+              display: ['"Syne"', 'sans-serif'],
+            },
+            boxShadow: {
+              'gold-glow': '0 0 25px -3px rgba(255, 215, 0, 0.28), 0 0 10px -2px rgba(255, 215, 0, 0.15)',
+              'gold-subtle': '0 0 15px 0 rgba(255, 215, 0, 0.12)',
+              'gold-strong': '0 0 35px 2px rgba(255, 215, 0, 0.45)',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-[#060608] text-gray-100 font-sans antialiased selection:bg-[#FFD700] selection:text-black min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

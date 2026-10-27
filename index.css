@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060608;
+    color: #e2e8f0;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar with gold accents */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0b0e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffe55c;
+  }
+}
+
+/* Luminous gold metallic gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFFDF0 0%, #FFE55C 25%, #FFD700 50%, #D4AF37 75%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Radiant gold button styling */
+.btn-gold-luminous {
+  background: linear-gradient(135deg, #FFE55C 0%, #FFD700 50%, #E5B800 100%);
+  color: #000000;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-luminous:hover:not(:disabled) {
+  background: linear-gradient(135deg, #FFF085 0%, #FFE033 50%, #FFD700 100%);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transform: translateY(-1px);
+}
+
+.btn-gold-luminous:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Luxury card with subtle rim illumination */
+.luxury-card {
+  background: linear-gradient(180deg, rgba(18, 20, 28, 0.85) 0%, rgba(10, 11, 16, 0.95) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.luxury-card:hover {
+  border-color: rgba(255, 215, 0, 0.28);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.55), 0 0 20px rgba(255, 215, 0, 0.08);
+}
+
+/* Luminous Gold Shimmer Animation */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-gold-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 215, 0, 0.15) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 3s infinite linear;
+}
+
+/* Radiant Gold Aura Glow */
+.gold-aura {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  filter: blur(80px);
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, rgba(255, 180, 0, 0.04) 50%, transparent 80%);
+}
